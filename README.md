@@ -1,4 +1,4 @@
-# Design-Equalizer-Landing-Page
+# Design-Equalizer-Landing-Page / Mobile First
 
 Frontend Mentor - Challenge 
 
