@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  font-family: IBM Plex Sans;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.page {
+  position: relative;
+  overflow: hidden;
+}
+.page__bg-images-mobile {
+  position: absolute;
+  width: 100%;
+  top: -10%;
+  left: -5%;
+}
+.page__bg-images-mobile img {
+  width: 150%;
+}
+.page__bg-images-tablet {
+  display: none;
+}
+.page__bg-images-desktop {
+  display: none;
+}
+.page__bg-images-pattern-1 {
+  display: none;
+}
+.page__header-logo {
+  margin: 2rem 0 4rem 1.5rem;
+}
+.page__header-logo img {
+  width: 146px;
+}
+.page__header-text {
+  width: 80%;
+  margin: 0 1.5rem 10rem;
+}
+.page__header-text h1 {
+  font-size: 2.5rem;
+  line-height: 48px;
+  letter-spacing: -0.45px;
+}
+.page__header-text p {
+  line-height: 26px;
+}
+.page__main {
+  position: relative;
+}
+.page__main-bg {
+  display: flex;
+  justify-content: center;
+  background: #191826;
+  border-radius: 12px;
+}
+.page__main-bg-pattern-2 img {
+  width: 280px;
+}
+.page__main-appPreview {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: -23%;
+}
+.page__main-appPreview img {
+  width: 209px;
+}
+.page__main-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 92%;
+  padding: 2.5rem;
+  background: #fa7453;
+  border-radius: 12px;
+}
+.page__main-appDescription h1 {
+  color: #fcfaf9;
+}
+.page__main-appDescription p {
+  color: #fcfaf9;
+  font-size: 1.125rem;
+  line-height: 28px;
+}
+.page__main-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page__main-price h1 {
+  margin: 0.4rem 0 2rem;
+  color: #fcfaf9;
+  font-size: 4rem;
+}
+.page__main-price p {
+  color: #fcfaf9;
+  font-size: 1.2rem;
+}
+.page__main-download {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.page__main-download-ios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 12px;
+  background: #191826;
+}
+.page__main-download-ios p {
+  color: #fcfaf9;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+}
+.page__main-download-ios:hover {
+  background: #66e2dc;
+  cursor: pointer;
+}
+.page__main-download-android {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #fcfaf9;
+  border-radius: 12px;
+}
+.page__main-download-android p {
+  font-size: 1.125rem;
+  letter-spacing: -0.18px;
+  font-weight: 700;
+  color: #191826;
+}
+.page__main-download-android:hover {
+  background: #ffb964;
+  cursor: pointer;
+}
+.page__footer {
+  margin: 38rem 2rem 4.5rem 1.5rem;
+}
+.page__footer-copyright {
+  margin-top: 1.5rem;
+}
+.page__footer-copyright p {
+  color: #191826;
+  line-height: 26px;
+}
+.page__footer-copyright p span {
+  font-weight: 700;
+}
+.page__footer-social {
+  display: flex;
+  margin-top: 3.5rem;
+  gap: 1rem;
+}
+.page__footer-social img:hover {
+  filter: invert(66%) sepia(26%) saturate(6542%) hue-rotate(327deg) brightness(101%) contrast(96%);
+  cursor: pointer;
+}
+
+@media (min-width: 500px) {
+  .page__bg-images-mobile {
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    left: -5%;
+  }
+  .page__bg-images-mobile img {
+    width: 150%;
+  }
+}
+@media (min-width: 768px) {
+  .page__bg-images-mobile {
+    display: none;
+  }
+  .page__bg-images-tablet {
+    position: absolute;
+    display: block;
+    top: -15%;
+    left: -45%;
+  }
+  .page__bg-images-pattern-1 {
+    position: absolute;
+    display: block;
+    top: -1.5%;
+    left: 71%;
+  }
+  .page__bg-images-pattern-1 img {
+    width: 266.67px;
+  }
+  .page__header-logo {
+    margin: 3rem 0 5rem 1.5rem;
+  }
+  .page__header-text {
+    width: 60%;
+    margin: 0 1.5rem 15rem 1.5rem;
+  }
+  .page__header-text h1 {
+    font-size: 4rem;
+    line-height: 64px;
+    letter-spacing: -0.72px;
+  }
+  .page__header-text p {
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
+  .page__main {
+    height: 600px;
+    margin: 0 1.5rem;
+  }
+  .page__main-bg {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .page__main-bg-pattern-2 {
+    position: absolute;
+    top: -5%;
+    left: 35%;
+  }
+  .page__main-appPreview {
+    left: -20%;
+  }
+  .page__main-appPreview img {
+    width: 270px;
+  }
+  .page__main-content {
+    width: 400px;
+    left: 35%;
+    top: 25%;
+  }
+  .page__footer {
+    margin: 15rem 2rem 4.5rem 1.5rem;
+  }
+  .page__footer-content {
+    display: flex;
+  }
+  .page__footer-copyright {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .page__footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+    margin: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .page {
+    padding: 1.5rem 2.5rem;
+  }
+  .page__main-content {
+    left: 50%;
+    top: 25%;
+  }
+}
+@media (min-width: 1200px) {
+  .page {
+    padding: 3.5rem 7.5rem;
+  }
+  .page__bg-images-tablet {
+    display: none;
+  }
+  .page__bg-images-desktop {
+    position: absolute;
+    display: block;
+    top: -18%;
+    left: -22%;
+  }
+  .page__bg-images-pattern-1 {
+    position: absolute;
+    display: block;
+    top: -2%;
+    left: 80%;
+  }
+  .page__bg-images-pattern-1 img {
+    width: 266.67px;
+  }
+  .page__header-logo {
+    margin: 0 0 5rem 1.5rem;
+  }
+  .page__header-text {
+    width: 75%;
+    margin: 0 1.5rem 18rem 1.5rem;
+  }
+  .page__header-text h1 {
+    font-size: 5.5rem;
+    line-height: 88px;
+    letter-spacing: -1px;
+  }
+  .page__header-text p {
+    font-size: 1.25rem;
+    line-height: 34px;
+  }
+  .page__main-bg-pattern-2 {
+    top: -5%;
+    left: 30%;
+  }
+  .page__main-bg-pattern-2 img {
+    width: 312px;
+  }
+  .page__main-appPreview {
+    top: -35%;
+    left: -27%;
+  }
+  .page__main-appPreview img {
+    width: 312px;
+  }
+  .page__main-content {
+    width: 446px;
+    left: 51%;
+    top: 15%;
+  }
+  .page__main-appDescription h1 {
+    font-size: 2.5rem;
+  }
+  .page__main-appDescription p {
+    font-size: 1.25rem;
+  }
+  .page__footer {
+    display: flex;
+    margin: 10rem 2rem 4.5rem 1.5rem;
+    gap: 5rem;
+  }
+  .page__footer-copyright {
+    width: 40%;
+    margin: 0;
+  }
+  .page__footer-copyright p {
+    margin: 0;
+  }
+  .page__footer-social {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
